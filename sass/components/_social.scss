@@ -1,0 +1,27 @@
+.social {
+    list-style: none;
+    display: flex;
+
+    @include media(650) {
+        align-self: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+        
+    
+    &__link:hover &__icon {
+        fill: $color-primary;
+       
+    }
+
+    &__icon {
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        fill: $color-primary-light;
+        transition: all .2s;
+    }
+}

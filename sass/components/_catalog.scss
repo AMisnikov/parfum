@@ -1,0 +1,20 @@
+.catalog {
+    list-style: none;
+    padding: 6rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media(630) {
+        //justify-content: center;
+        flex-direction: column;
+        align-items: center; 
+    }
+    &__item {
+        width: 23%;
+        min-width: 27rem;
+        margin-bottom: 3rem;
+        
+    }
+}
+

@@ -1,0 +1,16 @@
+.header {
+    background-image: linear-gradient(45deg, $color-grey-light, rgba($color-grey-light, .3) 56%, rgba($color-primary-light, .6) 56%, $color-primary), url('../img/header-back.jpg');
+    
+    background-size: cover;
+    min-height: 90vh;
+    padding: 7.5rem 0 3rem 0;
+
+    @include media(1200) {
+        padding: 7.5rem 3rem 3rem 3rem;
+    }
+
+    @include media(700) {
+        padding: 3rem;
+    }
+}
+

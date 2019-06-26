@@ -1,0 +1,13 @@
+.section-catalog {
+    background-color: #fff;
+    padding: 9.5rem 0;
+    text-align: center;
+
+    @include media(1250) {
+        padding: 5.5rem 3rem;
+    }
+
+    @include media(400) {
+        padding: 3rem 1rem;
+    }
+}

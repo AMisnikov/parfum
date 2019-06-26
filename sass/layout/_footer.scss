@@ -1,0 +1,97 @@
+.footer {
+    background-color: #fff;
+    position: relative;
+    
+    &__wrap {
+        border-top: 1px solid $color-grey-light;
+        border-bottom: 1px solid $color-grey-light;
+        padding: 5rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include media(650) {
+            flex-direction: column;
+        }
+
+        .logo {
+            @include media(730) {
+                display: none;
+            } 
+        }
+        /*
+        @include media(620) {
+            flex-direction: column;
+            align-items: center;
+        }
+        */
+
+
+    }
+
+    @include media(1220) {
+        padding: 0 3rem;
+    }
+}
+
+.footer-contacts {
+    list-style: none;
+
+    @include media(650) {
+        margin-bottom: 3rem;
+       
+    }
+   
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+        
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited,
+    &__link:active {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: $color-grey-dark;
+        transition: all .2s;
+        @include media(650) {
+            justify-content: center;
+        }
+        span {
+            margin-left: 2rem;
+            transition: all .2s;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        fill: $color-primary;
+        transition: all .2s;
+    }
+
+    &__link:hover span {
+        transform: scale(1.05);
+    }
+
+    &__link:hover &__icon {
+        fill: $color-primary-light;
+    }
+}
+
+.copyright {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: $color-grey-dark;
+    padding: 2.4rem 0;
+}
