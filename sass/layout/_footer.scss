@@ -94,4 +94,13 @@
     text-align: center;
     color: $color-grey-dark;
     padding: 2.4rem 0;
+
+    a {
+        text-decoration: none;
+        color: $color-grey-dark;
+    }
+
+    a:hover {
+        color: $color-primary-light;
+    }
 }

@@ -443,6 +443,11 @@ body {
   text-align: center;
   color: #999999;
   padding: 2.4rem 0; }
+  .copyright a {
+    text-decoration: none;
+    color: #999999; }
+  .copyright a:hover {
+    color: #C999D3; }
 
 .section-catalog {
   background-color: #fff;
